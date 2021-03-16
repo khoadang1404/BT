@@ -1,0 +1,35 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Chuong1_2;
+
+/**
+ *
+ * @author ADMIN
+ */
+import java.util.Scanner;
+public class Bai4_Tinhngiaithua {
+    public static void main(String[] args) {
+        Scanner dt = new Scanner(System.in);
+        System.out.println("nhap n: ");
+        int n = dt.nextInt();
+        TINHGIAITHUA(n);
+    }
+    public static void TINHGIAITHUA(int n) {
+        int kt, tong =1;
+        if(n <= 0)
+            System.out.println("nhap sai");
+        else
+        {
+            if(n % 2 == 0)
+                kt = 2;
+            else
+                kt = 1;
+            for(int i=kt; i<=n; i+=2)
+                tong = tong * i;
+            System.out.println("n!! = "+ tong);
+        } 
+    }
+}
